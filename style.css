@@ -1,10 +1,308 @@
-body{
+*{
     margin: 0;
+    scrollbar-width: none;
+    text-decoration: none;
+    color: #e5e5e5;
+    transition: all .3s ease;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .wrapper{
     height: 100vh;
     width: 100vw;
+}
+.mainbackground{
+    width: 100%;
+    object-fit: contain;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: -999;
+}
+.bg{
+    height: max-content;
+    width: 100%;
+}
+.shadow{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(#0f0f0fff, #0f0f0f00);
+}
+.extra{
+    background-color: #0f0f0f;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    bottom: -500px;
+}
+.bottom{
+    bottom: -200px;
+    rotate: 180deg;
+}
+header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: 8vw;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 42%;
+    margin-left: 40px;
+}
+.navlist{
+    display: flex;
+    font-size: 1.7vw;
+    font-family: 'Inder', sans-serif;
+    margin-right: 80px;
+    transition: font-size 0s;
+}
+.navlist li a{
+    margin-left: 5vw;
+}
+.navlist li a:hover{
+    color: #ECCCA3;
+}
+.title{
+    position: absolute;
+    color: #e5e5e5;
+    font-family: 'Inder', sans-serif;
+    top: 345px;
+    font-size: 50px;
+    right: 100px;
+}
+.blurcontainer{
+    font-family: 'Inder', sans-serif;
+    height: 135px;
+    width: 420px;
+    background: #72727222;
+    border-radius: 32px;
+    color: #e5e5e5;
+    position: absolute;
+    top: 435px;
+    font-size: 25px;
+    right: 90px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    backdrop-filter: blur(8px);
+}
+.getstarted{
+    height: 50px;
+    width: 160px;
+    position: absolute;
+    top: 600px;
+    right: 190px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.buttext{
+    position: absolute;
+    top: 0;
+    line-height: 50px;
+    text-align: center;
+    width: 160px;
+    left: 0;
+    font-family: 'Inder', sans-serif;
+    font-size: 16px;
+    color: #0f0f0f;
+    z-index: 5;
+}
+.cover{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #ECCCA3;
+    top: 0px;
+    left: -160px;
+    z-index: 1;
+}
+.getstarted:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+.getstarted:hover .cover{
+    left: 0;
+}
+.welcome{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: -998;
+    font-family: 'Kurale',sans-serif;
+}
+.welcome div{
+    z-index: 0;
+}
+.welcometo{
+    position: relative;
+    font-size: 50px;
+    color: #ECCCA3;
+    top: 100px;
+}
+.descsub{
+    position: relative;
+    font-size: 40px;
+    top: 100px;
+}
+.desc{
+    position: relative;
+    font-size: 28px;
+    top: 150px;
+    font-family: 'Lusitana', serif;
+    text-align: center;
+    padding: 90px;
+}
+.gotofeature{
+    font-family: 'Inder', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    width: 160px;
+    color: #0f0f0f;
+    position: relative;
+    top: 170px;
+    border-radius: 100px;
+}
+.gotofeature:hover{
+    background-color: #ECCCA3;
+    cursor: pointer;
+    scale: 1.1;
+}
+.features{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: -998;
+    font-family: 'Kufam',sans-serif;
+}
+.featuretitle{
+    position: relative;
+    color: #ECCCA3;
+    font-size: 35px;
+    font-weight: 900;
+    top: 30px;
+}
+.underline{
+    position: relative;
+    top: -8px;
+    height: 5px;
+    width: 100%;
+    background-color: #ECCCA3;
+}
+.featuredesc{
+    font-family: 'Gurajada', serif;
+    font-size: 40px;
+    position: relative;
+    top: 70px;
+}
+.explore{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 500px;
+    position: relative;
+    top: 120px;
+    width: 100vw;
+}
+.card{
+    background-color: #313131AD;
+    height: 180px;
+    width: 40%;
+    border-radius: 30px;
+    display: flex;
+    padding:  15px 25px;
+}
+.card img{
+    position: relative;
+    top: 5px;
+    height: 40px;
+}
+.contentcontainer{
+    margin-left: 30px;
+}
+.cardtitle{
+    font-family: 'Gurajada', serif;
+    font-size: 50px;
+    line-height: 50px;
+}
+.cardcontent{
+    margin-top: 20px;
+    font-size: 21px;
+    font-family: 'Hanuman', serif;
+}
+.tt{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eccca3;
+    font-size: 20px;
+    font-family: "Hanuman";
+}
+.events{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eccca3;
+    font-size: 20px;
+    font-family: "Hanuman";
+}
+.reminders{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eccca3;
+    font-size: 20px;
+    font-family: "Hanuman";
+}
+.backtotop{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background-color: #e5e5e5;
+    bottom: 25px;
+    left: 25px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
+.fixtext{
+    color: #0f0f0f;
+    font-size: 20px;
+    font-weight: 900;
+    z-index: 5;
+}
+.backtotop .fixcover{
+    height: 100%;
+    width: 100%;
+    background-color: #ECCCA3;
+    position: absolute;
+    top: 40px;
+    z-index: 0;
+}
+.backtotop:hover {
+    scale: 1.1;
+}
+.backtotop:hover .fixcover{
+    top: 0;
+} 

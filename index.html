@@ -5,10 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skedule</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Hanuman:wght@100;300;400;700;900&family=Gurajada&family=Kufam:ital,wght@0,400..900;1,400..900&family=Lusitana:wght@400;700&family=Kurale&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
-        <h1>Hello Skedule 👋👋</h1>
+        <section id="lander">
+            <div class="bg">
+                <div class="shadow"></div>
+                <img src="./assets/bg2.jpg" class="mainbackground">
+                <div class="shadow bottom"></div>
+                <div class="extra"></div>
+            </div>
+            <header>
+                <img src="./assets/logo_2.png" class="logo">
+                <nav>
+                    <ul class="navlist" type="none">
+                        <li><a href="#lander">Home</a></li>
+                        <li><a href="#tt">Time Table</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#reminders">Reminders</a></li>
+                    </ul>
+                </nav>
+                <!-- <div class="signup">
+                    <button class="login">Login</button>
+                    <button class="register">Register</button>
+                </div> -->
+            </header>
+            <div class="title">Organize Your Campus Life</div>
+            <div>
+                <div class="blurcontainer blur"></div>
+                <div class="blurcontainer">Stay on top of your schedule and never miss an event</div>
+            </div>
+            <a href="#welcome"><button class="getstarted"><div class="buttext">Get Started</div><div class="cover"></div></button></a>
+        </section>
+        <section id="welcome">
+            <div class="welcome">
+                <div class="welcometo">Welcome to</div>
+                <div class="descsub">Course Schedule Organizer and Campus Event Calendar</div>
+                <div class="desc">Our platform helps you manage your classes, assignments, exams, and campus events all in one place. With customizable features and reminders, you can optimize your time and make the most of your college experience.</div>
+                <a href="#features"><button class="gotofeature"><div class="buttext">Features</div></button></a>
+            </div>
+        </section>
+        <section id="features">
+            <div class="features">
+                <div class="featuretitle">FEATURES<div class="underline"></div></div>
+                <div class="featuredesc">Discover how our platform can help you stay organized and engaged in campus life</div>
+                <div class="explore">
+                    <a href="#tt" class="card">
+                        <img src="./assets/Features.png">
+                        <div class="contentcontainer">
+                            <div class="cardtitle">Course Time Table</div>
+                            <div class="cardcontent">Effortlessly manage your course schedule and never miss a class again</div>
+                        </div>
+                    </a>
+                    <a href="#events" class="card">
+                        <img src="./assets/Features.png">
+                        <div class="contentcontainer">
+                            <div class="cardtitle">Events Calendar</div>
+                            <div class="cardcontent">Stay updated on campus events, workshops and activities at a glance</div>
+                        </div>
+                    </a>
+                    <a href="#reminders" class="card">
+                        <img src="./assets/Features.png">
+                        <div class="contentcontainer">
+                            <div class="cardtitle">Reminders</div>
+                            <div class="cardcontent">Set reminders for assignments, exams and events to stay on top of your academic life</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="tt">
+            <div class="tt">Time Table</div>
+        </section>
+        <section id="events">
+            <div class="events">Events</div>
+        </section>
+        <section id="reminders">
+            <div class="reminders">Reminders</div>
+        </section>
+        <a href="#lander" id="backtotop" class=""><div class="fixtext">∧</div><div class="fixcover"></div></a>
     </div>
+    <script>
+        window.addEventListener("scroll", function(){
+            var but = document.getElementById("backtotop");
+            but.classList.toggle("backtotop", window.scrollY > 0);
+        })
+    </script>
 </body>
 </html>
