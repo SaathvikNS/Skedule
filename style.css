@@ -240,7 +240,7 @@ header{
     font-size: 21px;
     font-family: 'Hanuman', serif;
 }
-.tt{
+.cardin{
     height: 100vh;
     width: 100vw;
     background-color: #0f0f0f;
@@ -248,30 +248,14 @@ header{
     flex-direction: column;
     align-items: center;
     color: #eccca3;
-    font-size: 20px;
-    font-family: "Hanuman";
+    font-family: "Kurale", serif;
 }
-.events{
-    height: 100vh;
-    width: 100vw;
-    background-color: #0f0f0f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #eccca3;
-    font-size: 20px;
-    font-family: "Hanuman";
+.cardintitle{
+    font-size: 40px;
+    color: #ECCCA3;
 }
-.reminders{
-    height: 100vh;
-    width: 100vw;
-    background-color: #0f0f0f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #eccca3;
-    font-size: 20px;
-    font-family: "Hanuman";
+.cardintitle .underline{
+    height: 4px;    
 }
 .backtotop{
     position: fixed;
@@ -306,3 +290,9 @@ header{
 .backtotop:hover .fixcover{
     top: 0;
 } 
+.calcontainer{
+    height: 80vh;
+    width: 80%;
+    position: relative;
+    
+}
