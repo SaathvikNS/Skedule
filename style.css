@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     scrollbar-width: none;
     text-decoration: none;
@@ -7,11 +7,13 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-.wrapper{
+
+.wrapper {
     height: 100vh;
     width: 100vw;
 }
-.mainbackground{
+
+.mainbackground {
     width: 100%;
     object-fit: contain;
     position: sticky;
@@ -19,28 +21,33 @@
     top: 0;
     z-index: -999;
 }
-.bg{
+
+.bg {
     height: max-content;
     width: 100%;
 }
-.shadow{
+
+.shadow {
     position: absolute;
     height: 50%;
     width: 100%;
     background: linear-gradient(#0f0f0fff, #0f0f0f00);
 }
-.extra{
+
+.extra {
     background-color: #0f0f0f;
     position: absolute;
     width: 100%;
     height: 300px;
     bottom: -500px;
 }
-.bottom{
+
+.bottom {
     bottom: -200px;
     rotate: 180deg;
 }
-header{
+
+header {
     position: absolute;
     top: 0;
     display: flex;
@@ -49,24 +56,29 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.logo{
+
+.logo {
     height: 42%;
     margin-left: 40px;
 }
-.navlist{
+
+.navlist {
     display: flex;
     font-size: 1.7vw;
     font-family: 'Inder', sans-serif;
     margin-right: 80px;
     transition: font-size 0s;
 }
-.navlist li a{
+
+.navlist li a {
     margin-left: 5vw;
 }
-.navlist li a:hover{
+
+.navlist li a:hover {
     color: #ECCCA3;
 }
-.title{
+
+.title {
     position: absolute;
     color: #e5e5e5;
     font-family: 'Inder', sans-serif;
@@ -74,7 +86,8 @@ header{
     font-size: 50px;
     right: 100px;
 }
-.blurcontainer{
+
+.blurcontainer {
     font-family: 'Inder', sans-serif;
     height: 135px;
     width: 420px;
@@ -91,7 +104,8 @@ header{
     padding: 10px;
     backdrop-filter: blur(8px);
 }
-.getstarted{
+
+.getstarted {
     height: 50px;
     width: 160px;
     position: absolute;
@@ -100,7 +114,8 @@ header{
     border-radius: 100px;
     overflow: hidden;
 }
-.buttext{
+
+.buttext {
     position: absolute;
     top: 0;
     line-height: 50px;
@@ -112,7 +127,8 @@ header{
     color: #0f0f0f;
     z-index: 5;
 }
-.cover{
+
+.cover {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -121,14 +137,17 @@ header{
     left: -160px;
     z-index: 1;
 }
-.getstarted:hover{
+
+.getstarted:hover {
     cursor: pointer;
     scale: 1.1;
 }
-.getstarted:hover .cover{
+
+.getstarted:hover .cover {
     left: 0;
 }
-.welcome{
+
+.welcome {
     height: 100vh;
     width: 100vw;
     background-color: #0f0f0f;
@@ -136,23 +155,27 @@ header{
     align-items: center;
     flex-direction: column;
     z-index: -998;
-    font-family: 'Kurale',sans-serif;
+    font-family: 'Kurale', sans-serif;
 }
-.welcome div{
+
+.welcome div {
     z-index: 0;
 }
-.welcometo{
+
+.welcometo {
     position: relative;
     font-size: 50px;
     color: #ECCCA3;
     top: 100px;
 }
-.descsub{
+
+.descsub {
     position: relative;
     font-size: 40px;
     top: 100px;
 }
-.desc{
+
+.desc {
     position: relative;
     font-size: 28px;
     top: 150px;
@@ -160,7 +183,8 @@ header{
     text-align: center;
     padding: 90px;
 }
-.gotofeature{
+
+.gotofeature {
     font-family: 'Inder', sans-serif;
     font-size: 16px;
     height: 50px;
@@ -170,12 +194,14 @@ header{
     top: 170px;
     border-radius: 100px;
 }
-.gotofeature:hover{
+
+.gotofeature:hover {
     background-color: #ECCCA3;
     cursor: pointer;
     scale: 1.1;
 }
-.features{
+
+.features {
     height: 100vh;
     width: 100vw;
     background-color: #0f0f0f;
@@ -183,29 +209,33 @@ header{
     align-items: center;
     flex-direction: column;
     z-index: -998;
-    font-family: 'Kufam',sans-serif;
+    font-family: 'Kufam', sans-serif;
 }
-.featuretitle{
+
+.featuretitle {
     position: relative;
     color: #ECCCA3;
     font-size: 35px;
     font-weight: 900;
     top: 30px;
 }
-.underline{
+
+.underline {
     position: relative;
     top: -8px;
     height: 5px;
     width: 100%;
     background-color: #ECCCA3;
 }
-.featuredesc{
+
+.featuredesc {
     font-family: 'Gurajada', serif;
     font-size: 40px;
     position: relative;
     top: 70px;
 }
-.explore{
+
+.explore {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -214,33 +244,39 @@ header{
     top: 120px;
     width: 100vw;
 }
-.card{
+
+.card {
     background-color: #313131AD;
     height: 180px;
     width: 40%;
     border-radius: 30px;
     display: flex;
-    padding:  15px 25px;
+    padding: 15px 25px;
 }
-.card img{
+
+.card img {
     position: relative;
     top: 5px;
     height: 40px;
 }
-.contentcontainer{
+
+.contentcontainer {
     margin-left: 30px;
 }
-.cardtitle{
+
+.cardtitle {
     font-family: 'Gurajada', serif;
     font-size: 50px;
     line-height: 50px;
 }
-.cardcontent{
+
+.cardcontent {
     margin-top: 20px;
     font-size: 21px;
     font-family: 'Hanuman', serif;
 }
-.cardin{
+
+.cardin {
     height: 100vh;
     width: 100vw;
     background-color: #0f0f0f;
@@ -250,14 +286,17 @@ header{
     color: #eccca3;
     font-family: "Kurale", serif;
 }
-.cardintitle{
+
+.cardintitle {
     font-size: 40px;
     color: #ECCCA3;
 }
-.cardintitle .underline{
-    height: 4px;    
+
+.cardintitle .underline {
+    height: 4px;
 }
-.backtotop{
+
+.backtotop {
     position: fixed;
     height: 40px;
     width: 40px;
@@ -270,13 +309,15 @@ header{
     align-items: center;
     overflow: hidden;
 }
-.fixtext{
+
+.fixtext {
     color: #0f0f0f;
     font-size: 20px;
     font-weight: 900;
     z-index: 5;
 }
-.backtotop .fixcover{
+
+.backtotop .fixcover {
     height: 100%;
     width: 100%;
     background-color: #ECCCA3;
@@ -284,15 +325,29 @@ header{
     top: 40px;
     z-index: 0;
 }
+
 .backtotop:hover {
     scale: 1.1;
 }
-.backtotop:hover .fixcover{
+
+.backtotop:hover .fixcover {
     top: 0;
-} 
-.calcontainer{
+}
+
+.calcontainer {
     height: 80vh;
     width: 80%;
     position: relative;
-    
+
+}
+.ttcalcontainer {
+    position: relative;
+    width: 80%;
+    max-height: 80vh;
+    padding: 5px;
+    color: #efefef;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: #252525;
 }
