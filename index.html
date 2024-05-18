@@ -10,8 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inder&family=Hanuman:wght@100;300;400;700;900&family=Gurajada&family=Kufam:ital,wght@0,400..900;1,400..900&family=Lusitana:wght@400;700&family=Kurale&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./ttcalstyle.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./evo-calendar.min.css">
-    <link rel="stylesheet" href="./evo-calendar.midnight-blue.min.css">
 </head>
 <body>
     <div class="wrapper">
@@ -26,16 +24,11 @@
                 <img src="./assets/logo_2.png" class="logo">
                 <nav>
                     <ul class="navlist" type="none">
-                        <li><a href="#lander">Home</a></li>
                         <li><a href="#tt">Time Table</a></li>
                         <li><a href="#events">Events</a></li>
                         <li><a href="#reminders">Reminders</a></li>
                     </ul>
                 </nav>
-                <!-- <div class="signup">
-                    <button class="login">Login</button>
-                    <button class="register">Register</button>
-                </div> -->
             </header>
             <div class="title">Organize Your Campus Life</div>
             <div>
@@ -148,9 +141,6 @@
                         <i class="fas fa-plus"></i>
                     </button>
                 </div>
-                <!-- <div class="calcontainer">
-                    <div id="calendar"></div>
-                </div> -->
             </div>
         </section>
         <section id="reminders">
@@ -161,35 +151,10 @@
         <a href="#lander" id="backtotop" class=""><div class="fixtext">∧</div><div class="fixcover"></div></a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-    <script src="./evo-calendar.min.js"></script>
     <script>
         window.addEventListener("scroll", function(){
             var but = document.getElementById("backtotop");
             but.classList.toggle("backtotop", window.scrollY > 0);
-        })
-
-        $(document).ready(function() {
-            $('#calendar').evoCalendar({
-                'theme': 'Midnight Blue',
-                calendarEvents: [
-                    {
-                        id: 'bHay68s',
-                        name: "New Year",
-                        date: "January/1/2020",
-                        type: "holiday",
-                        description: "Vacation leave for 3 days.",
-                        everyYear: true
-                    },
-                    {
-                        name: "Vacation Leave",
-                        badge: "02/13 - 02/15",
-                        date: ["February/13/2024", "February/15/2024"],
-                        description: "Vacation leave for 3 days.",
-                        type: "event",
-                        color: "#63d867"
-                    }
-                    ]
-            })
         })
     </script>
     <script src="./ttcalscript.js"></script>
