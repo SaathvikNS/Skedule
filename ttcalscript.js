@@ -253,25 +253,44 @@ addEventTitle.addEventListener("input", (e) => {
   addEventTitle.value = addEventTitle.value.slice(0, 60);
 });
 
-
 addEventFrom.addEventListener("input", (e) => {
-  addEventFrom.value = addEventFrom.value.replace(/[^0-9:]/g, "");
-  if (addEventFrom.value.length === 2) {
-    addEventFrom.value += ":";
+  let value = addEventFrom.value.replace(/[^0-9:]/g, "");
+
+  if (e.inputType === "deleteContentBackward") {
+    if (value.length === 2 && value.endsWith(":")) {
+      value = value.slice(0, -1);
+    }
+  } else {
+    if (value.length >= 2 && !value.includes(":")) {
+      value = value.slice(0, 2) + ":" + value.slice(2);
+    }
   }
-  if (addEventFrom.value.length > 5) {
-    addEventFrom.value = addEventFrom.value.slice(0, 5);
+
+  if (value.length > 5) {
+    value = value.slice(0, 5);
   }
+
+  addEventFrom.value = value;
 });
 
 addEventTo.addEventListener("input", (e) => {
-  addEventTo.value = addEventTo.value.replace(/[^0-9:]/g, "");
-  if (addEventTo.value.length === 2) {
-    addEventTo.value += ":";
+  let value = addEventTo.value.replace(/[^0-9:]/g, "");
+
+  if (e.inputType === "deleteContentBackward") {
+    if (value.length === 2 && value.endsWith(":")) {
+      value = value.slice(0, -1);
+    }
+  } else {
+    if (value.length >= 2 && !value.includes(":")) {
+      value = value.slice(0, 2) + ":" + value.slice(2);
+    }
   }
-  if (addEventTo.value.length > 5) {
-    addEventTo.value = addEventTo.value.slice(0, 5);
+
+  if (value.length > 5) {
+    value = value.slice(0, 5);
   }
+
+  addEventTo.value = value;
 });
 
 addEventSubmit.addEventListener("click", () => {
@@ -282,6 +301,11 @@ addEventSubmit.addEventListener("click", () => {
     alert("Please fill all the fields");
     return;
   }
+
+  var from = eventTimeFrom.split(":");
+  var to = eventTimeTo.split(":");
+
+  console.log(from, to);
 
   const timeFromArr = eventTimeFrom.split(":");
   const timeToArr = eventTimeTo.split(":");
