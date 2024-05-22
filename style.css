@@ -385,8 +385,7 @@ footer{
     height: 80vh;
     min-height: 400px;
     padding: 30px;
-    background: transparent;
-    border: 2px solid #ECCCA3;
+    background: #373737;
     border-radius: 10px;
     margin-top: 40px;
   }
@@ -402,11 +401,16 @@ footer{
     outline: none;
     padding: 10px 10px 10px 20px;
     background-color: transparent;
-    border: 2px solid #ECCCA3;
+    outline: none;
+    border: 0px;
+    box-shadow: 0 0 1px 1px #656565;
     border-radius: 30px;
     color: #eee;
     font-size: 16px;
     margin-right: 10px;
+  }
+  .todo-input:focus{
+    box-shadow: 0 0 1px 1px #ECCCA3;
   }
   
   .todo-input::placeholder {
@@ -440,11 +444,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #313131AD;
+    background: linear-gradient(90deg, #656565, transparent);
     border-radius: 5px;
     margin: 10px 0;
     padding: 10px 12px;
-    border: 2px solid #ECCCA3;
     transition: all 0.2s ease;
   }
   
@@ -457,7 +460,7 @@ footer{
   }
   
   .todo:hover {
-    background-color:#ECCCA3;
+    background: linear-gradient(90deg, #ECCCA3, transparent);
   }
   
   .todo label {
@@ -555,7 +558,7 @@ footer{
     color: #eee;
     padding: 5px 15px;
     border-radius: 100px;
-    border: 2px solid #ECCCA3;
+    border: 1px solid #656565;
     transition: all 0.2s ease;
     cursor: pointer;
   }
@@ -566,14 +569,15 @@ footer{
   
   .delete-all {
     display: flex;
+    border-radius: 100px;
     color: #eee;
     padding: 7px 15px;
     cursor: pointer;
+    border: 1px solid #656565;
     transition: all 0.2s ease;
   }
   
   .delete-all:hover {
-    border-radius: 5px;
     background-color: #ECCCA3;
   }
 
@@ -583,7 +587,7 @@ footer{
   .todo-date{
     background-color: transparent;
     border-radius: 100px;
-    border: 2px solid #ECCCA3;
+    border: 1px solid #ECCCA3;
     padding: 0 10px;
     margin: 0 10px 0 0;
 }
