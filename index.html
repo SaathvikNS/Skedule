@@ -1,162 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skedule</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Hanuman:wght@100;300;400;700;900&family=Gurajada&family=Kufam:ital,wght@0,400..900;1,400..900&family=Lusitana:wght@400;700&family=Kurale&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./ttcalstyle.css">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inder&family=Hanuman:wght@100;300;400;700;900&family=Gurajada&family=Kufam:ital,wght@0,400..900;1,400..900&family=Lusitana:wght@400;700&family=Kurale&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./ttcalstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body onload="loaded()">
     <div class="wrapper">
-        <section id="lander">
-            <div class="bg">
-                <div class="shadow"></div>
-                <img src="./assets/bg2.jpg" class="mainbackground">
-                <div class="shadow bottom"></div>
-                <div class="extra"></div>
+      <section id="lander">
+        <div class="bg">
+          <div class="shadow"></div>
+          <img src="./assets/bg2.jpg" class="mainbackground" />
+          <div class="shadow bottom"></div>
+          <div class="extra"></div>
+        </div>
+        <header>
+          <img src="./assets/logo_2.png" class="logo" />
+          <nav>
+            <ul class="navlist" type="none">
+              <li><a href="#tt">Time Table</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#reminders">Reminders</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="title">Organize Your Campus Life</div>
+        <div>
+          <div class="blurcontainer blur"></div>
+          <div class="blurcontainer">
+            Stay on top of your schedule and never miss an event
+          </div>
+        </div>
+        <a href="#welcome"
+          ><button class="getstarted">
+            <div class="buttext">Get Started</div>
+            <div class="cover"></div></button
+        ></a>
+      </section>
+      <section id="welcome">
+        <div class="welcome">
+          <div class="welcometo">Welcome to</div>
+          <div class="descsub">
+            Course Schedule Organizer and Campus Event Calendar
+          </div>
+          <div class="desc">
+            Our platform helps you manage your classes, assignments, exams, and
+            campus events all in one place. With customizable features and
+            reminders, you can optimize your time and make the most of your
+            college experience.
+          </div>
+          <a href="#features"
+            ><button class="gotofeature">
+              <div class="buttext">Features</div>
+            </button></a
+          >
+        </div>
+      </section>
+      <section id="features">
+        <div class="features">
+          <div class="featuretitle">
+            FEATURES
+            <div class="underline"></div>
+          </div>
+          <div class="featuredesc">
+            Discover how our platform can help you stay organized and engaged in
+            campus life
+          </div>
+          <div class="explore" id="explore">
+            <a href="#tt" class="card" id="a">
+              <div class="circle" id="ac"></div>
+              <img src="./assets/Features.png" />
+              <div class="contentcontainer">
+                <div class="cardtitle">Course Time Table</div>
+                <div class="cardcontent">
+                  Effortlessly manage your course schedule and never miss a
+                  class again
+                </div>
+              </div>
+            </a>
+            <a href="#events" class="card" id="b">
+              <div class="circle" id="bc"></div>
+              <img src="./assets/Features.png" />
+              <div class="contentcontainer">
+                <div class="cardtitle">Events Calendar</div>
+                <div class="cardcontent">
+                  Stay updated on campus events, workshops and activities at a
+                  glance
+                </div>
+              </div>
+            </a>
+            <a href="#reminders" class="card" id="c">
+              <div class="circle" id="cc"></div>
+              <img src="./assets/Features.png" />
+              <div class="contentcontainer">
+                <div class="cardtitle">Reminders</div>
+                <div class="cardcontent">
+                  Set reminders for assignments, exams and events to stay on top
+                  of your academic life
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="tt">
+        <div class="cardin">
+          <div class="cardintitle">
+            Time Table
+            <div class="underline"></div>
+          </div>
+        </div>
+      </section>
+      <section id="events">
+        <div class="cardin">
+          <div class="cardintitle">
+            Events
+            <div class="underline"></div>
+          </div>
+          <div class="ttcalcontainer">
+            <div class="left">
+              <div class="calendar">
+                <div class="month">
+                  <i class="fas fa-angle-left prev"></i>
+                  <div class="date">december 2015</div>
+                  <i class="fas fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                  <div>Sun</div>
+                  <div>Mon</div>
+                  <div>Tue</div>
+                  <div>Wed</div>
+                  <div>Thu</div>
+                  <div>Fri</div>
+                  <div>Sat</div>
+                </div>
+                <div class="days"></div>
+                <div class="goto-today">
+                  <div class="goto">
+                    <input
+                      type="text"
+                      placeholder="mm/yyyy"
+                      class="date-input"
+                    />
+                    <button class="goto-btn">Go</button>
+                  </div>
+                  <button class="today-btn">Today</button>
+                </div>
+              </div>
             </div>
-            <header>
-                <img src="./assets/logo_2.png" class="logo">
-                <nav>
-                    <ul class="navlist" type="none">
-                        <li><a href="#tt">Time Table</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#reminders">Reminders</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="title">Organize Your Campus Life</div>
-            <div>
-                <div class="blurcontainer blur"></div>
-                <div class="blurcontainer">Stay on top of your schedule and never miss an event</div>
+            <div class="right">
+              <div class="today-date">
+                <div class="event-day">wed</div>
+                <div class="event-date">12th december 2022</div>
+              </div>
+              <div class="events"></div>
+              <div class="add-event-wrapper">
+                <div class="add-event-header">
+                  <div class="title">Add Event</div>
+                  <i class="fas fa-times close"></i>
+                </div>
+                <div class="add-event-body">
+                  <div class="add-event-input">
+                    <input
+                      type="text"
+                      placeholder="Event Name"
+                      class="event-name"
+                    />
+                  </div>
+                  <div class="add-event-input">
+                    <input
+                      type="text"
+                      placeholder="Event Time From (24hr format)"
+                      class="event-time-from"
+                    />
+                  </div>
+                  <div class="add-event-input">
+                    <input
+                      type="text"
+                      placeholder="Event Time To (24hr format)"
+                      class="event-time-to"
+                    />
+                  </div>
+                </div>
+                <div class="add-event-footer">
+                  <button class="add-event-btn">Add Event</button>
+                </div>
+              </div>
             </div>
-            <a href="#welcome"><button class="getstarted"><div class="buttext">Get Started</div><div class="cover"></div></button></a>
-        </section>
-        <section id="welcome">
-            <div class="welcome">
-                <div class="welcometo">Welcome to</div>
-                <div class="descsub">Course Schedule Organizer and Campus Event Calendar</div>
-                <div class="desc">Our platform helps you manage your classes, assignments, exams, and campus events all in one place. With customizable features and reminders, you can optimize your time and make the most of your college experience.</div>
-                <a href="#features"><button class="gotofeature"><div class="buttext">Features</div></button></a>
-            </div>
-        </section>
-        <section id="features">
-            <div class="features">
-                <div class="featuretitle">FEATURES<div class="underline"></div></div>
-                <div class="featuredesc">Discover how our platform can help you stay organized and engaged in campus life</div>
-                <div class="explore">
-                    <a href="#tt" class="card">
-                        <img src="./assets/Features.png">
-                        <div class="contentcontainer">
-                            <div class="cardtitle">Course Time Table</div>
-                            <div class="cardcontent">Effortlessly manage your course schedule and never miss a class again</div>
-                        </div>
-                    </a>
-                    <a href="#events" class="card">
-                        <img src="./assets/Features.png">
-                        <div class="contentcontainer">
-                            <div class="cardtitle">Events Calendar</div>
-                            <div class="cardcontent">Stay updated on campus events, workshops and activities at a glance</div>
-                        </div>
-                    </a>
-                    <a href="#reminders" class="card">
-                        <img src="./assets/Features.png">
-                        <div class="contentcontainer">
-                            <div class="cardtitle">Reminders</div>
-                            <div class="cardcontent">Set reminders for assignments, exams and events to stay on top of your academic life</div>
-                        </div>
-                    </a>
+            <button class="add-event">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="reminders">
+        <div class="cardin">
+          <div class="cardintitle">
+            Reminders
+            <div class="underline"></div>
+          </div>
+          <div class="remaindercontainer">
+            <div class="x">
+                <div class="input-container">
+                  <input class="todo-input" placeholder="Add a new task..." />
+                  <input type="date" class="todo-date" />
+                  <button class="add-button">+</button>
+                </div>
+                <div class="filters">
+                  <div class="filter" data-filter="completed">Complete</div>
+                  <div class="filter" data-filter="pending">Incomplete</div>
+                  <div class="delete-all">Delete All</div>
                 </div>
             </div>
-        </section>
-        <section id="tt">
-            <div class="cardin">
-                <div class="cardintitle">Time Table <div class="underline"></div></div>
-                
+            <div class="todos-container">
+              <ul class="todos"></ul>
+              <div class="NullString" style="display: flex;justify-content: center;align-items: center;height: 80%;">Nothing Found</div>
             </div>
-        </section>
-        <section id="events">
-            <div class="cardin">
-                <div class="cardintitle">Events <div class="underline"></div></div>
-            </div>
-        </section>
-        <section id="reminders">
-            <div class="cardin">
-                <div class="cardintitle">Reminders <div class="underline"></div></div>
-                <div class="ttcalcontainer">
-                    <div class="left">
-                        <div class="calendar">
-                            <div class="month">
-                                <i class="fas fa-angle-left prev"></i>
-                                <div class="date">december 2015</div>
-                                <i class="fas fa-angle-right next"></i>
-                            </div>
-                            <div class="weekdays">
-                                <div>Sun</div>
-                                <div>Mon</div>
-                                <div>Tue</div>
-                                <div>Wed</div>
-                                <div>Thu</div>
-                                <div>Fri</div>
-                                <div>Sat</div>
-                            </div>
-                            <div class="days"></div>
-                            <div class="goto-today">
-                                <div class="goto">
-                                    <input type="text" placeholder="mm/yyyy" class="date-input" />
-                                    <button class="goto-btn">Go</button>
-                                </div>
-                                <button class="today-btn">Today</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="today-date">
-                            <div class="event-day">wed</div>
-                            <div class="event-date">12th december 2022</div>
-                        </div>
-                        <div class="events"></div>
-                        <div class="add-event-wrapper">
-                            <div class="add-event-header">
-                                <div class="title">Add Event</div>
-                                <i class="fas fa-times close"></i>
-                            </div>
-                            <div class="add-event-body">
-                                <div class="add-event-input">
-                                    <input type="text" placeholder="Event Name" class="event-name" />
-                                </div>
-                                <div class="add-event-input">
-                                    <input type="text" placeholder="Event Time From" class="event-time-from" />
-                                </div>
-                                <div class="add-event-input">
-                                    <input type="text" placeholder="Event Time To" class="event-time-to" />
-                                </div>
-                            </div>
-                            <div class="add-event-footer">
-                                <button class="add-event-btn">Add Event</button>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="add-event">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <a href="#lander" id="backtotop" class=""><div class="fixtext">∧</div><div class="fixcover"></div></a>
+          </div>
+        </div>
+      </section>
+      <footer>© SaathvikNS.github.io/Skedule</footer>
+      <a href="#lander" id="backtotop" class=""
+        ><div class="fixtext">∧</div>
+        <div class="fixcover"></div
+      ></a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script>
-        window.addEventListener("scroll", function(){
-            var but = document.getElementById("backtotop");
-            but.classList.toggle("backtotop", window.scrollY > 0);
-        })
+      window.addEventListener("scroll", function () {
+        var but = document.getElementById("backtotop");
+        but.classList.toggle("backtotop", window.scrollY > 0);
+      });
+
+      //loader
+      function loaded() {
+        document.body.classList.add("body");
+      }
+
+      //card hover effects
+      const coords = { x: 0, y: 0 };
+      const cards = document.querySelectorAll(".card");
+
+      window.addEventListener("mousemove", function (e) {
+        coords.x = e.clientX;
+        coords.y = e.clientY;
+
+        animateCircles();
+      });
+
+      function animateCircles() {
+        let x = coords.x;
+        let y = coords.y;
+
+        cards.forEach(function (card, indeces) {
+          let rect = card.getBoundingClientRect();
+          let circle = card.querySelector(".circle");
+
+          circle.style.setProperty("--x", x - rect.left + "px");
+          circle.style.setProperty("--y", y - rect.top + "px");
+        });
+      }
+
+      //remainders
+      const input = document.querySelector(".todo-input");
+      const addButton = document.querySelector(".add-button");
+      const todosHtml = document.querySelector(".todos");
+      const emptyImage = document.querySelector(".NullString");
+      let todosJson = JSON.parse(localStorage.getItem("todos")) || [];
+      const deleteAllButton = document.querySelector(".delete-all");
+      const filters = document.querySelectorAll(".filter");
+      let filter = "";
+
+      showTodos();
+
+      function getTodoHtml(todo, index) {
+        if (filter && filter != todo.status) {
+          return "";
+        }
+        let checked = todo.status == "completed" ? "checked" : "";
+        return /* html */ `
+    <li class="todo">
+      <label for="${index}">
+        <input id="${index}" onclick="updateStatus(this)" type="checkbox" ${checked}>
+        <span class="${checked}">${todo.name}</span>
+      </label>
+      <button class="delete-btn" data-index="${index}" onclick="remove(this)"><i class="fa fa-times"></i></button>
+    </li>
+  `;
+      }
+
+      function showTodos() {
+        if (todosJson.length == 0) {
+          todosHtml.innerHTML = "";
+          emptyImage.style.display = "flex";
+        } else {
+          todosHtml.innerHTML = todosJson.map(getTodoHtml).join("");
+          emptyImage.style.display = "none";
+        }
+      }
+
+      function addTodo(todo) {
+        input.value = "";
+        todosJson.unshift({ name: todo, status: "pending" });
+        localStorage.setItem("todos", JSON.stringify(todosJson));
+        showTodos();
+      }
+
+      input.addEventListener("keyup", (e) => {
+        let todo = input.value.trim();
+        if (!todo || e.key != "Enter") {
+          return;
+        }
+        addTodo(todo);
+      });
+
+      addButton.addEventListener("click", () => {
+        let todo = input.value.trim();
+        if (!todo) {
+          return;
+        }
+        addTodo(todo);
+      });
+
+      function updateStatus(todo) {
+        let todoName = todo.parentElement.lastElementChild;
+        if (todo.checked) {
+          todoName.classList.add("checked");
+          todosJson[todo.id].status = "completed";
+        } else {
+          todoName.classList.remove("checked");
+          todosJson[todo.id].status = "pending";
+        }
+        localStorage.setItem("todos", JSON.stringify(todosJson));
+      }
+
+      function remove(todo) {
+        const index = todo.dataset.index;
+        todosJson.splice(index, 1);
+        showTodos();
+        localStorage.setItem("todos", JSON.stringify(todosJson));
+      }
+
+      filters.forEach(function (el) {
+        el.addEventListener("click", (e) => {
+          if (el.classList.contains("active")) {
+            el.classList.remove("active");
+            filter = "";
+          } else {
+            filters.forEach((tag) => tag.classList.remove("active"));
+            el.classList.add("active");
+            filter = e.target.dataset.filter;
+          }
+          showTodos();
+        });
+      });
+
+      deleteAllButton.addEventListener("click", () => {
+        todosJson = [];
+        localStorage.setItem("todos", JSON.stringify(todosJson));
+        showTodos();
+      });
     </script>
     <script src="./ttcalscript.js"></script>
-</body>
+  </body>
 </html>

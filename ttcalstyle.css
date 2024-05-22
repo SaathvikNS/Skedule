@@ -17,7 +17,6 @@
     border-radius: 5px;
     background-color: #4e4e4e;
   }
-  /* set after behind the main element */
   .calendar::before,
   .calendar::after {
     content: "";
@@ -166,7 +165,7 @@
     border: none;
     border-radius: 5px;
     padding: 0 20px;
-    color: var(--primary-clr);
+    color: #5e5e5e;
     border-radius: 5px;
   }
   .calendar .goto-today button {
