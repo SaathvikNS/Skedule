@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png">
     <title>Skedule</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,7 +34,7 @@
           <img src="./assets/logo_2.png" class="logo" />
           <nav>
             <ul class="navlist" type="none">
-              <li><a href="#tt">Time Table</a></li>
+              <li><div class="call" onclick="call()" style="cursor: pointer;">Time Table<div></li>
               <li><a href="#events">Events</a></li>
               <li><a href="#reminders">Reminders</a></li>
             </ul>
@@ -86,7 +87,7 @@
               <div class="circle" id="ac"></div>
               <img src="./assets/Features.png" />
               <div class="contentcontainer">
-                <div class="cardtitle">Course Time Table</div>
+                <div class="cardtitle">Course Time Table (coming soon)</div>
                 <div class="cardcontent">
                   Effortlessly manage your course schedule and never miss a
                   class again
@@ -118,14 +119,14 @@
           </div>
         </div>
       </section>
-      <section id="tt">
+      <!-- <section id="tt">
         <div class="cardin">
           <div class="cardintitle">
             Time Table
             <div class="underline"></div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section id="events">
         <div class="cardin">
           <div class="cardintitle">
@@ -255,6 +256,10 @@
         var but = document.getElementById("backtotop");
         but.classList.toggle("backtotop", window.scrollY > 0);
       });
+
+      function call(){
+        alert("Will be available shortly....\nThank you for your patience!!")
+      }
 
       //loader
       function loaded() {

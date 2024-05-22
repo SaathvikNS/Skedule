@@ -72,11 +72,11 @@ header {
     transition: font-size 0s;
 }
 
-.navlist li a {
+.navlist li a, .navlist li .call{
     margin-left: 5vw;
 }
 
-.navlist li a:hover {
+.navlist li a:hover, .navlist li .call:hover {
     color: #ECCCA3;
 }
 
