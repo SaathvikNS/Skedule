@@ -216,20 +216,29 @@
           </div>
           <div class="remaindercontainer">
             <div class="x">
-                <div class="input-container">
-                  <input class="todo-input" placeholder="Add a new task..." />
-                  <input type="date" class="todo-date" />
-                  <button class="add-button">+</button>
-                </div>
-                <div class="filters">
-                  <div class="filter" data-filter="completed">Complete</div>
-                  <div class="filter" data-filter="pending">Incomplete</div>
-                  <div class="delete-all">Delete All</div>
-                </div>
+              <div class="input-container">
+                <input class="todo-input" placeholder="Add a new task..." />
+                <button class="add-button">+</button>
+              </div>
+              <div class="filters">
+                <div class="filter" data-filter="completed">Complete</div>
+                <div class="filter" data-filter="pending">Incomplete</div>
+                <div class="delete-all">Delete All</div>
+              </div>
             </div>
             <div class="todos-container">
               <ul class="todos"></ul>
-              <div class="NullString" style="display: flex;justify-content: center;align-items: center;height: 80%;">Nothing Found</div>
+              <div
+                class="NullString"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 80%;
+                "
+              >
+                Nothing Found
+              </div>
             </div>
           </div>
         </div>
@@ -278,6 +287,7 @@
 
       //remainders
       const input = document.querySelector(".todo-input");
+      const dt = document.querySelector(".todo-date");
       const addButton = document.querySelector(".add-button");
       const todosHtml = document.querySelector(".todos");
       const emptyImage = document.querySelector(".NullString");
@@ -323,6 +333,8 @@
 
       input.addEventListener("keyup", (e) => {
         let todo = input.value.trim();
+        let dt = date.value();
+        console.log(dt);
         if (!todo || e.key != "Enter") {
           return;
         }
